@@ -1,0 +1,97 @@
+* {
+    margin: 0; /*m0 é o atalho para margin: 0;*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1d1b1b;
+    color: azure;
+}
+
+h1 {
+    color: #dc143c; /* Rosa FIAP -> Crismon */
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0; 
+}
+
+a {
+    color: #ff456a;
+}
+
+.cards { /* O . referência a uma classe*/
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+
+}
+
+.card-item {
+    width: 30%;
+    border: 1px solid #dc143c;
+    border-radius: 10px;
+    text-align: center;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.card-item:hover {
+    transform: scale(1.2);
+}
+
+.icon{
+    font-size: 50px;
+    color: #dc143c;
+    margin-bottom: 30px 0;
+    transition: 1s;
+    margin: 20px;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+.card-item h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.card-item p {
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid #dc143c;
+    background-color: #dc143c;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #f0ffff;
+    font-weight: 800;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #dc143c;
+}
+
+@media(max-width:1024px) {
+    
+    .card-item{
+        width: 80%;
+    }
+
+}
